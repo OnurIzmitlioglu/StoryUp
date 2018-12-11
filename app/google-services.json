@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "337632158429",
+    "firebase_url": "https://storyup-f4d9f.firebaseio.com",
+    "project_id": "storyup-f4d9f",
+    "storage_bucket": "storyup-f4d9f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:337632158429:android:5f69445fafbb050b",
+        "android_client_info": {
+          "package_name": "com.onurizmitlioglu.storyup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "337632158429-4tsc6vq76pmd6h97cfjta5sg5vk0h6g6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.onurizmitlioglu.storyup",
+            "certificate_hash": "0d77edf1a7c0348898c82a6448e775886a1a161c"
+          }
+        },
+        {
+          "client_id": "337632158429-s3jhn14pirb2oa4v12eo5226s8haobqo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAURzlcmLwxXX59TcsmpW_wJMlIFwPFvbA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "337632158429-s3jhn14pirb2oa4v12eo5226s8haobqo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
