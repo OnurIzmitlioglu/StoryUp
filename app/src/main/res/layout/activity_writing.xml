@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WritingActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_story_name"
+        android:layout_width="match_parent"
+        android:weightSum="3"
+        android:layout_height="43dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/tv_story_name_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter your story title:"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="29dp" />
+
+        <EditText
+            android:layout_weight="2"
+            android:id="@+id/et_story_name_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Story Title"
+            tools:layout_editor_absoluteX="163dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_story_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_story_name">
+
+        <TextView
+            android:id="@+id/tv_story_category_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pick a category for your story:"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="96dp" />
+
+        <Spinner
+            android:id="@+id/spn_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/categories"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="115dp">
+
+        </Spinner>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_story_part_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Write your story:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_story_category" />
+
+    <EditText
+        android:id="@+id/et_story_part_field"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:hint="Your story goes here..."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_story_part_field" />
+
+    <Button
+        android:id="@+id/btn_publish_story"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Publish Story"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_story_part_field" />
+
+</android.support.constraint.ConstraintLayout>

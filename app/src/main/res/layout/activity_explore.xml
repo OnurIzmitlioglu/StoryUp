@@ -7,17 +7,12 @@
     android:layout_height="match_parent"
     tools:context=".ExploreActivity">
 
-    <ScrollView
+    <ListView
+        android:id="@+id/lv_stories"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/rv_explore_stories"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-
-    </ScrollView>
-
+    </ListView>
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/navigation"
         android:layout_width="0dp"
