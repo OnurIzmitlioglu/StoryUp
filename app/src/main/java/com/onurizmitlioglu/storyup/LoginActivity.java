@@ -65,7 +65,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         }
 
         // Show a progressbar first.
-        mProgressDialog.setMessage("Registering the user...");
+        mProgressDialog.setMessage("Logging the user in...");
         mProgressDialog.show();
 
         mFirebaseAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {

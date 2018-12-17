@@ -20,6 +20,12 @@
         completions."
     </string>
 
+    <!-- Strings related to Facebook Login. -->
+    <string name="facebook_app_id">1986987818261385</string>
+    <string name="fb_login_protocol_scheme">fb1986987818261385</string>
+
+
+
     <array name="categories">
         <item>Love</item>
         <item>Crime</item>
