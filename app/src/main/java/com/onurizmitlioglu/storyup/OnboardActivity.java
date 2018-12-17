@@ -63,6 +63,7 @@ public class OnboardActivity extends AppCompatActivity implements View.OnClickLi
         fbLoginButton.setOnClickListener(this);
     }
 
+
     private void registerUser(){
         String email = editTextMail.getText().toString().trim();
         String password = editTextPassword.getText().toString().trim();
