@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#5d1049"
     tools:context=".OnboardActivity">
 
     <LinearLayout
@@ -19,7 +20,12 @@
             android:id="@+id/et_email"
             android:hint="Enter your mail"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:fontFamily="casual"
+            android:textStyle="italic"
+            android:background="#720d5d"/>
 
         <EditText
             android:layout_margin="15dp"
@@ -27,22 +33,35 @@
             android:id="@+id/et_password"
             android:hint="Enter your password"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF"
+            android:fontFamily="casual"
+            android:textStyle="italic"
+            android:background="#720d5d"
+
+            />
 
         <Button
             android:layout_margin="15dp"
             android:id="@+id/btn_register"
             android:text="Register"
             android:textAllCaps="false"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape"
+            android:fontFamily="monospace"
+            android:textColor="#ffff"/>
 
         <TextView
-            android:textAlignment="center"
             android:id="@+id/tv_sign_in"
-            android:text="Already registered? Sign In"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:background="#720d5d"
+            android:fontFamily="monospace"
+            android:text="Already registered? Sign In"
+            android:textAlignment="center"
+            android:textColor="#ffff" />
 
         <com.facebook.login.widget.LoginButton
             android:id="@+id/fb_login_button"

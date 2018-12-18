@@ -25,7 +25,7 @@ public class ReadingActivity extends AppCompatActivity {
         setContentView(R.layout.activity_reading);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         title = (TextView) findViewById(R.id.tv_story_name);
-        author = (TextView) findViewById(R.id.tv_author_name);
+//        author = (TextView) findViewById(R.id.tv_author_name);
         category = (TextView) findViewById(R.id.tv_category);
         story = (TextView) findViewById(R.id.tv_story);
 
@@ -40,7 +40,7 @@ public class ReadingActivity extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 title.setText(dataSnapshot.getValue(Story.class).getStoryTitle());
-                author.setText(dataSnapshot.getValue(Story.class).getAuthorMail());
+//                author.setText(dataSnapshot.getValue(Story.class).getAuthorMail());
                 category.setText(dataSnapshot.getValue(Story.class).getStoryCategory());
                 story.setText(dataSnapshot.getValue(Story.class).getStoryText());
             }

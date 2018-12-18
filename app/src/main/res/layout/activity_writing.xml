@@ -4,12 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#5d1049"
     tools:context=".WritingActivity">
 
     <LinearLayout
         android:id="@+id/ll_story_name"
         android:layout_width="match_parent"
-        android:weightSum="3"
+        android:weightSum="4"
+        android:background="#720d5d"
         android:layout_height="43dp"
         android:layout_marginEnd="4dp"
         android:layout_marginLeft="8dp"
@@ -23,6 +25,7 @@
 
         <TextView
             android:layout_weight="1"
+            android:textColor="#feeae6"
             android:id="@+id/tv_story_name_field"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -32,6 +35,9 @@
 
         <EditText
             android:layout_weight="2"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:fontFamily="monospace"
             android:id="@+id/et_story_name_field"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -51,6 +57,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:gravity="center_vertical"
+        android:background="#720d5d"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -60,6 +67,7 @@
             android:id="@+id/tv_story_category_field"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="#feeae6"
             android:text="Pick a category for your story:"
             tools:layout_editor_absoluteX="0dp"
             tools:layout_editor_absoluteY="96dp" />
@@ -69,6 +77,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:entries="@array/categories"
+            android:fontFamily="monospace"
             tools:layout_editor_absoluteX="0dp"
             tools:layout_editor_absoluteY="115dp">
 
@@ -88,6 +97,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="Write your story:"
+        android:textColor="#feeae6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ll_story_category" />
@@ -96,12 +106,14 @@
         android:id="@+id/et_story_part_field"
         android:layout_width="match_parent"
         android:layout_height="300dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#feeae6"
         android:hint="Your story goes here..."
+        android:fontFamily="monospace"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_story_part_field" />
@@ -116,6 +128,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="Publish Story"
+        android:background="@drawable/button_shape1"
         android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

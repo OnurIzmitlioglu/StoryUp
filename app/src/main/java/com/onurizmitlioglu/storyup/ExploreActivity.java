@@ -45,12 +45,8 @@ public class ExploreActivity extends AppCompatActivity {
                 case R.id.navigation_explore:
                     //Do nothing.
                     return true;
-                case R.id.navigation_search:
-                    return true;
                 case R.id.navigation_add_story:
                     startActivity(new Intent(ExploreActivity.this, WritingActivity.class));
-                    return true;
-                case R.id.navigation_notifications:
                     return true;
                 case R.id.navigation_profile:
                     startActivity(new Intent(ExploreActivity.this, ProfileActivity.class));

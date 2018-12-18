@@ -11,6 +11,7 @@
         android:layout_centerVertical="true"
         android:orientation="vertical"
         android:layout_width="match_parent"
+        android:background="#feeae6"
         android:layout_height="match_parent">
 
         <EditText
@@ -19,7 +20,14 @@
             android:id="@+id/et_email"
             android:hint="Enter your mail"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:background="#720d5d"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:fontFamily="casual"
+            android:textStyle="italic"
+
+            />
 
         <EditText
             android:layout_margin="15dp"
@@ -27,22 +35,32 @@
             android:id="@+id/et_password"
             android:hint="Enter your password"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:background="#720d5d"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:fontFamily="casual"
+            android:textStyle="italic"
+            />
 
         <Button
-            android:layout_margin="15dp"
             android:id="@+id/btn_sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@drawable/button_shape1"
+            android:fontFamily="monospace"
             android:text="Sign In"
             android:textAllCaps="false"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:textColor="#720d5d" />
+
 
         <TextView
-            android:textAlignment="center"
             android:id="@+id/tv_sign_up"
-            android:text="Do not have an account? Sign up here."
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:text="Do not have an account? Register here."
+            android:textAlignment="center" />
 
     </LinearLayout>
 

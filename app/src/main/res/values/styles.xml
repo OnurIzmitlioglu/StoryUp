@@ -5,7 +5,15 @@
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:spinnerDropDownItemStyle">@style/mySpinnerItemStyle</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+
+
+
+
+<style name="mySpinnerItemStyle" parent="@android:style/Widget.Holo.DropDownItem.Spinner">
+    <item name="android:textColor">@color/my_spinner_text_color</item>
+</style>
 </resources>
